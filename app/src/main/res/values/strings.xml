@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FragSwap</string>
+    <string name="guide">Guide</string>
+    <string name="student2">Student2</string>
+    <string name="name1">Enter name 1</string>
+    <string name="student1">Student 1</string>
+    <string name="swap">Swap</string>
+    <string name="name2">Enter name 2</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.cbluser22.fragswap.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/tb_toolbar"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/guide"
+
+            android:layout_gravity="center"
+            android:textSize="@dimen/thirtsp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@+id/tb_toolbar"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fl_1"
+            android:layout_height="0dp">
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fl_2"
+            android:layout_height="0dp"></FrameLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:id="@+id/btn_swap"
+            android:text="@string/swap"
+            android:layout_marginLeft="@dimen/twosevenzero"
+            />
+    </LinearLayout>
+</RelativeLayout>
